@@ -3,6 +3,7 @@ filetype off                  " required
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 colorscheme pablo
+syntax on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,6 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 " vim-airline - statusbar
 Plugin 'bling/vim-airline'
+" tmuxline - bling for tmux
+Plugin 'edkolev/tmuxline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
