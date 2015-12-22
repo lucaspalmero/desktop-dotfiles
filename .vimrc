@@ -4,6 +4,27 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 colorscheme pablo
 syntax on
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+
+" le sacamos el tab al YouCompleteMe
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
+
+syntax on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,6 +40,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 " tmuxline - bling for tmux
 Plugin 'edkolev/tmuxline.vim'
+" YouCompleteMe - autocompletion
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
