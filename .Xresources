@@ -1,4 +1,4 @@
-URxvt*font: xft:Meslo LG M DZ for Powerline:size=14:antialias=true
+URxvt*font: xft:ProggyCleanTTCE Nerd Font:size=12:antialias=false
 URxvt*scrollBar:                      false
 URxvt*mouseWheelScrollPage:           false
 URxvt*saveLines:                      5000
