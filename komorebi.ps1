@@ -65,9 +65,12 @@ komorebic invisible-borders 7 0 14 7
 # Uncomment the next lines if you want a visual border around the active window
 komorebic active-window-border-colour 88 88 88 --window-kind single
 komorebic active-window-border-colour 256 165 66 --window-kind stack
-komorebic active-window-border-width 4
+komorebic active-window-border-width 16
 komorebic active-window-border-offset 0
 komorebic active-window-border enable
+
+# Mouse!
+komorebic toggle-focus-follows-mouse
 
 komorebic.exe manage-rule exe mintty.exe
 

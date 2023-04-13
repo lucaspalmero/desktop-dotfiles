@@ -410,7 +410,7 @@ komorebic.exe identify-tray-application exe "VRCX.exe"
 komorebic.exe identify-object-name-change-application exe "devenv.exe"
 
 # Visual Studio Code
-komorebic.exe identify-border-overflow-application exe "Code.exe"
+# komorebic.exe identify-border-overflow-application exe "Code.exe"
 
 # Voice.ai
 komorebic.exe identify-border-overflow-application exe "VoiceAI.exe"
