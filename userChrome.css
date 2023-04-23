@@ -1,6 +1,6 @@
 /* edited from https://github.com/Etesam913/rounded-fox/blob/main/userchrome.css */
 
-
+/*
 #navigator-toolbox-background {
   height: 0 !important;
 }
@@ -41,6 +41,42 @@
 
 toolbarbutton[open="true"] {
   --is-bar-visible: visible !important;
+}
+*/
+
+/*********************************
+ * From: https://gist.github.com/pedroarthur/02121730f4875c14646fd5293d9818a6
+ */
+
+/*
+ * From https://support.mozilla.org/en-US/questions/1185426
+ */
+
+#nav-bar {
+  -moz-box-ordinal-group: 3 !important;
+  border-top-width: 0 !important;
+}
+
+#PersonalToolbar {
+  -moz-box-ordinal-group: 2 !important;
+}
+
+#TabsToolbar {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+/*
+ * Based on firefox own behavior while in fullscreen
+ */
+
+#navigator-toolbox {
+	margin-top: -40px;
+	transition: margin-top 0.5s;
+}
+
+#navigator-toolbox:hover, #navigator-toolbox:focus-within {
+	margin-top: 0px;
+	transition: margin-top 0.5s;
 }
 
 /**
